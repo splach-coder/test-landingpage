@@ -79,13 +79,14 @@
 
       .offer-image {
         max-width: 100%;
-        height: auto;
+        aspect-ratio: 1/1;
+        min-height: 250px;
       }
 
       @media only screen and (min-width: 667px) {
         .offer-image {
-          max-width: fit-content;
-          max-height: 400px;
+          width: fit-content;
+          height: 400px;
         }
       }
 
@@ -116,7 +117,7 @@
           src="img.avif"
           width="100%"
           height="auto"
-          loading="lazy"
+         srcset="img.avif"
           alt="Samsung Galaxy A53"
           class="offer-image" />
         <p>احصل على هاتف Samsung Galaxy A53 واستمتع بميزات متطورة.</p>
